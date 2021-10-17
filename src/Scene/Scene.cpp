@@ -30,10 +30,10 @@ void Scene::DestroyEntity(Entity entity)
 }
 void Scene::OnEditorUpdate()
 {
-    auto view=m_Registry.view<TransformComponent,SpriteRendererComponent>();
+    auto view=m_Registry.view<TransformComponent,SpriteRendererComponent,TextureComponent>();
     for(auto entity:view)
     {
-        auto[trans,sprite]=view.get<TransformComponent,SpriteRendererComponent>(entity);
-        Renderer2D::DrawQuad(trans.GetTransform(),sprite.Color);
+        auto[trans,sprite,text]=view.get<TransformComponent,SpriteRendererComponent,TextureComponent>(entity);
+        Renderer2D::DrawQuad(trans.GetTransform(),sprite.Color,text.TextID);
     }
 }

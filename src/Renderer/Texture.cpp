@@ -24,7 +24,10 @@ Texture::Texture(const std::string& path):m_RendererID(0),m_FilePath(path),m_Loc
         std::cout << "Failed to load texture" << std::endl; 
     }
 }
-
+Ref<Texture> Texture::Create(const std::string& path)
+{
+    return std::make_shared<Texture>(path);
+}
 Texture::~Texture()
 {
     glDeleteTextures(1,&m_RendererID);

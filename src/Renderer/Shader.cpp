@@ -80,6 +80,14 @@ void Shader::SetInt1(const string& key,int value)
         glUniform1i(location,value);
     }
 }
+void Shader::SetIntArray(const string& key,int count,int* value)
+{
+    int location=glGetUniformLocation(m_RendererID,key.c_str());
+    if(location!=-1)
+    {
+        glUniform1iv(location,count,value);
+    }
+}
 
 
 

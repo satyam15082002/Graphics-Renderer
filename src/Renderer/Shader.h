@@ -24,6 +24,7 @@ class Shader
         void Unbind() const;
         void SetMat4(const string& key,glm::mat4 value);
         void SetInt1(const string& key,int value);
+        void SetIntArray(const string& key,int count,int* value);
 
     private:
         void CompileShader(unsigned int shaderID,ShaderType type) const;

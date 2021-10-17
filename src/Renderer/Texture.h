@@ -2,6 +2,7 @@
 #include<iostream>
 #include<GL/glew.h>
 #include<stb_image/stb_image.h>
+#include"./../Batch/Type.h"
 class Texture
 {
 private:
@@ -12,6 +13,7 @@ private:
 public:
     Texture(const std::string& path);
     ~Texture();
+    static Ref<Texture> Create(const std::string& path);
     void Bind(unsigned int slot=0) const;
     void Unbind() const;
     inline int GetWidth() const { return m_Width; }

@@ -4,6 +4,7 @@
 #include"../Renderer/IndexBuffer.h"
 #include"../Renderer/Shader.h"
 #include"../Renderer/Camera.h"
+#include"../Renderer/Texture.h"
 #include"Type.h"
 #include<vector>
 #include<glm/glm.hpp>
@@ -26,6 +27,8 @@ class Renderer2D
         static  void Init(Ref<Camera>& cam);
         static  void DrawQuad(glm::vec3 pos,glm::vec4 color);
         static  void DrawQuad(glm::mat4 trans,glm::vec4 color);
+        static  void DrawQuad(glm::vec3 pos,glm::vec4 color,float TextID);
+        static  void DrawQuad(glm::mat4 trans,glm::vec4 color,float TextID);
 
         static void ShutDown();
         static  void Flush();
@@ -34,4 +37,6 @@ class Renderer2D
         static Ref<Shader> m_Shader;
         static Ref<Camera> m_Camera;
         static  RenderData Stats;
+        static Ref<Texture> m_Texture[10];
+        static int m_TextureCount;
 };

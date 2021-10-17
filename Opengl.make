@@ -79,6 +79,7 @@ OBJECTS := \
 	$(OBJDIR)/VertexArray.o \
 	$(OBJDIR)/VertexBuffer.o \
 	$(OBJDIR)/Entity.o \
+	$(OBJDIR)/Panel.o \
 	$(OBJDIR)/Scene.o \
 	$(OBJDIR)/imgui.o \
 	$(OBJDIR)/imgui_demo.o \
@@ -185,6 +186,9 @@ $(OBJDIR)/VertexBuffer.o: src/Renderer/VertexBuffer.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/Entity.o: src/Scene/Entity.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/Panel.o: src/Scene/Panel.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/Scene.o: src/Scene/Scene.cpp

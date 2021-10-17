@@ -4,7 +4,7 @@ bin/obj/x64/Debug/Scene.o: src/Scene/Scene.cpp src/Scene/Scene.h \
  Dependencies/GLEW/include/GL/glew.h \
  src/Scene/../Batch/../Renderer/VertexBuffer.h \
  src/Scene/../Batch/../Renderer/IndexBuffer.h \
- src/Scene/../Batch/../Renderer/../Batch/Type.h \
+ e:\program\graphics-renderer\src\batch\type.h \
  Dependencies/GLM/include/glm/glm.hpp \
  Dependencies/GLM/include/glm/detail/_fixes.hpp \
  Dependencies/GLM/include/glm/detail/setup.hpp \
@@ -122,19 +122,19 @@ bin/obj/x64/Debug/Scene.o: src/Scene/Scene.cpp src/Scene/Scene.h \
  Dependencies/GLM/include/glm/./ext/../detail/../detail/func_matrix.inl \
  Dependencies/GLM/include/glm/./ext/../detail/../detail/../geometric.hpp \
  Dependencies/GLM/include/glm/./ext/../detail/../detail/../detail/func_geometric.inl \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\exponential.hpp \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/type_vec1.hpp \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/type_vec1.inl \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/func_exponential.inl \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\vector_relational.hpp \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/setup.hpp \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/func_vector_relational.inl \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/_vectorize.hpp \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\common.hpp \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/_fixes.hpp \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/func_common.inl \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/compute_common.hpp \
- e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/setup.hpp \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\exponential.hpp \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\detail/type_vec1.hpp \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\detail/type_vec1.inl \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\detail/func_exponential.inl \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\vector_relational.hpp \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\detail/setup.hpp \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\detail/func_vector_relational.inl \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\detail/_vectorize.hpp \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\common.hpp \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\detail/_fixes.hpp \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\detail/func_common.inl \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\detail/compute_common.hpp \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\detail/setup.hpp \
  Dependencies/GLM/include/glm/./ext/matrix_double2x2_precision.hpp \
  Dependencies/GLM/include/glm/./ext/matrix_float2x2.hpp \
  Dependencies/GLM/include/glm/./ext/matrix_float2x2_precision.hpp \
@@ -172,8 +172,8 @@ bin/obj/x64/Debug/Scene.o: src/Scene/Scene.cpp src/Scene/Scene.h \
  Dependencies/GLM/include/glm/gtc/../gtc/../ext/quaternion_common.inl \
  Dependencies/GLM/include/glm/gtc/../gtc/../ext/quaternion_float.hpp \
  Dependencies/GLM/include/glm/gtc/../gtc/../ext/../detail/type_quat.hpp \
- Dependencies/GLM/include/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.hpp \
- Dependencies/GLM/include/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.inl \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\ext\quaternion_relational.hpp \
+ e:\program\graphics-renderer\dependencies\glm\include\glm\ext\quaternion_relational.inl \
  Dependencies/GLM/include/glm/gtc/../gtc/../ext/../detail/type_quat.inl \
  Dependencies/GLM/include/glm/gtc/../gtc/../ext/quaternion_float_precision.hpp \
  Dependencies/GLM/include/glm/gtc/../gtc/../ext/quaternion_double.hpp \
@@ -198,7 +198,9 @@ bin/obj/x64/Debug/Scene.o: src/Scene/Scene.cpp src/Scene/Scene.h \
  Dependencies/GLM/include/glm/gtc/../gtc/../ext/vector_uint1.hpp \
  Dependencies/GLM/include/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
  Dependencies/GLM/include/glm/gtc/type_ptr.inl \
- src/Scene/../Batch/../Renderer/Camera.h src/Scene/Components.h \
+ src/Scene/../Batch/../Renderer/Camera.h \
+ src/Scene/../Batch/../Renderer/Texture.h \
+ Dependencies/STB_IMAGE/stb_image/stb_image.h src/Scene/Components.h \
  src/Scene/Entity.h
 src/Scene/Scene.h:
 Dependencies/Entt/Entity/entt.hpp:
@@ -207,7 +209,7 @@ src/Scene/../Batch/../Renderer/VertexArray.h:
 Dependencies/GLEW/include/GL/glew.h:
 src/Scene/../Batch/../Renderer/VertexBuffer.h:
 src/Scene/../Batch/../Renderer/IndexBuffer.h:
-src/Scene/../Batch/../Renderer/../Batch/Type.h:
+e:\program\graphics-renderer\src\batch\type.h:
 Dependencies/GLM/include/glm/glm.hpp:
 Dependencies/GLM/include/glm/detail/_fixes.hpp:
 Dependencies/GLM/include/glm/detail/setup.hpp:
@@ -325,19 +327,19 @@ Dependencies/GLM/include/glm/./ext/../detail/.././ext/matrix_float4x4_precision.
 Dependencies/GLM/include/glm/./ext/../detail/../detail/func_matrix.inl:
 Dependencies/GLM/include/glm/./ext/../detail/../detail/../geometric.hpp:
 Dependencies/GLM/include/glm/./ext/../detail/../detail/../detail/func_geometric.inl:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\exponential.hpp:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/type_vec1.hpp:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/type_vec1.inl:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/func_exponential.inl:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\vector_relational.hpp:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/setup.hpp:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/func_vector_relational.inl:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/_vectorize.hpp:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\common.hpp:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/_fixes.hpp:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/func_common.inl:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/compute_common.hpp:
-e:\visual-c++-program\opengl-main\dependencies\glm\include\glm\detail/setup.hpp:
+e:\program\graphics-renderer\dependencies\glm\include\glm\exponential.hpp:
+e:\program\graphics-renderer\dependencies\glm\include\glm\detail/type_vec1.hpp:
+e:\program\graphics-renderer\dependencies\glm\include\glm\detail/type_vec1.inl:
+e:\program\graphics-renderer\dependencies\glm\include\glm\detail/func_exponential.inl:
+e:\program\graphics-renderer\dependencies\glm\include\glm\vector_relational.hpp:
+e:\program\graphics-renderer\dependencies\glm\include\glm\detail/setup.hpp:
+e:\program\graphics-renderer\dependencies\glm\include\glm\detail/func_vector_relational.inl:
+e:\program\graphics-renderer\dependencies\glm\include\glm\detail/_vectorize.hpp:
+e:\program\graphics-renderer\dependencies\glm\include\glm\common.hpp:
+e:\program\graphics-renderer\dependencies\glm\include\glm\detail/_fixes.hpp:
+e:\program\graphics-renderer\dependencies\glm\include\glm\detail/func_common.inl:
+e:\program\graphics-renderer\dependencies\glm\include\glm\detail/compute_common.hpp:
+e:\program\graphics-renderer\dependencies\glm\include\glm\detail/setup.hpp:
 Dependencies/GLM/include/glm/./ext/matrix_double2x2_precision.hpp:
 Dependencies/GLM/include/glm/./ext/matrix_float2x2.hpp:
 Dependencies/GLM/include/glm/./ext/matrix_float2x2_precision.hpp:
@@ -375,8 +377,8 @@ Dependencies/GLM/include/glm/gtc/../gtc/../ext/../ext/quaternion_geometric.inl:
 Dependencies/GLM/include/glm/gtc/../gtc/../ext/quaternion_common.inl:
 Dependencies/GLM/include/glm/gtc/../gtc/../ext/quaternion_float.hpp:
 Dependencies/GLM/include/glm/gtc/../gtc/../ext/../detail/type_quat.hpp:
-Dependencies/GLM/include/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.hpp:
-Dependencies/GLM/include/glm/gtc/../gtc/../ext/../detail/../ext/quaternion_relational.inl:
+e:\program\graphics-renderer\dependencies\glm\include\glm\ext\quaternion_relational.hpp:
+e:\program\graphics-renderer\dependencies\glm\include\glm\ext\quaternion_relational.inl:
 Dependencies/GLM/include/glm/gtc/../gtc/../ext/../detail/type_quat.inl:
 Dependencies/GLM/include/glm/gtc/../gtc/../ext/quaternion_float_precision.hpp:
 Dependencies/GLM/include/glm/gtc/../gtc/../ext/quaternion_double.hpp:
@@ -402,5 +404,7 @@ Dependencies/GLM/include/glm/gtc/../gtc/../ext/vector_uint1.hpp:
 Dependencies/GLM/include/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp:
 Dependencies/GLM/include/glm/gtc/type_ptr.inl:
 src/Scene/../Batch/../Renderer/Camera.h:
+src/Scene/../Batch/../Renderer/Texture.h:
+Dependencies/STB_IMAGE/stb_image/stb_image.h:
 src/Scene/Components.h:
 src/Scene/Entity.h:

@@ -45,5 +45,13 @@ struct SpriteRendererComponent
     SpriteRendererComponent(const glm::vec4& color)
         : Color(color) {}
 };
+struct TextureComponent
+{
+    float TextID=0.0f;
+    TextureComponent() = default;
+    TextureComponent(const TextureComponent&) = default;
+    TextureComponent(const float& ID)
+        : TextID(ID) {}
+};
 
 
