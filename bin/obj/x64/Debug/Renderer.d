@@ -195,7 +195,8 @@ bin/obj/x64/Debug/Renderer.o: src/Renderer/Renderer.cpp \
  Dependencies/GLM/include/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
  Dependencies/GLM/include/glm/gtc/type_ptr.inl src/Renderer/VertexArray.h \
  src/Renderer/VertexBuffer.h src/Renderer/IndexBuffer.h \
- src/Renderer/Texture.h Dependencies/STB_IMAGE/stb_image/stb_image.h
+ src/Renderer/BufferLayout.h src/Renderer/Texture.h \
+ Dependencies/STB_IMAGE/stb_image/stb_image.h
 src/Renderer/Renderer.h:
 Dependencies/GLEW/include/GL/glew.h:
 Dependencies/GLFW/include/GLFW/glfw3.h:
@@ -396,5 +397,6 @@ Dependencies/GLM/include/glm/gtc/type_ptr.inl:
 src/Renderer/VertexArray.h:
 src/Renderer/VertexBuffer.h:
 src/Renderer/IndexBuffer.h:
+src/Renderer/BufferLayout.h:
 src/Renderer/Texture.h:
 Dependencies/STB_IMAGE/stb_image/stb_image.h:

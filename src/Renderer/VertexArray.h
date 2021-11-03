@@ -3,6 +3,7 @@
 #include<memory>
 #include"VertexBuffer.h"
 #include"IndexBuffer.h"
+#include"BufferLayout.h"
 #include"../Batch/Type.h"
 class VertexArray
 {
@@ -11,6 +12,7 @@ class VertexArray
     public:
         Ref<VertexBuffer> m_VB;
         Ref<IndexBuffer> m_IB;
+        Ref<BufferLayout> m_VL;
         VertexArray();
         ~VertexArray();
 
@@ -19,6 +21,8 @@ class VertexArray
 
         void AddVertexBuffer(Ref<VertexBuffer>& VB);
         void AddIndexBuffer(Ref<IndexBuffer>& IB);
+        void AddBufferLayout(Ref<BufferLayout>& VL);
+
 
 };
 

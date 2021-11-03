@@ -72,6 +72,7 @@ OBJECTS := \
 	$(OBJDIR)/IMGUIWindow.o \
 	$(OBJDIR)/Input.o \
 	$(OBJDIR)/Camera.o \
+	$(OBJDIR)/EditorCamera.o \
 	$(OBJDIR)/IndexBuffer.o \
 	$(OBJDIR)/Renderer.o \
 	$(OBJDIR)/Shader.o \
@@ -165,6 +166,9 @@ $(OBJDIR)/Input.o: src/Input/Input.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/Camera.o: src/Renderer/Camera.cpp
+	@echo $(notdir $<)
+	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
+$(OBJDIR)/EditorCamera.o: src/Renderer/EditorCamera.cpp
 	@echo $(notdir $<)
 	$(SILENT) $(CXX) $(ALL_CXXFLAGS) $(FORCE_INCLUDE) -o "$@" -MF "$(@:%.o=%.d)" -c "$<"
 $(OBJDIR)/IndexBuffer.o: src/Renderer/IndexBuffer.cpp

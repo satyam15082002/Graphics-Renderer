@@ -1,7 +1,8 @@
 bin/obj/x64/Debug/VertexArray.o: src/Renderer/VertexArray.cpp \
  src/Renderer/VertexArray.h Dependencies/GLEW/include/GL/glew.h \
  src/Renderer/VertexBuffer.h src/Renderer/IndexBuffer.h \
- src/Renderer/../Batch/Type.h Dependencies/GLM/include/glm/glm.hpp \
+ src/Renderer/BufferLayout.h src/Renderer/../Batch/Type.h \
+ Dependencies/GLM/include/glm/glm.hpp \
  Dependencies/GLM/include/glm/detail/_fixes.hpp \
  Dependencies/GLM/include/glm/detail/setup.hpp \
  Dependencies/GLM/include/glm/detail/../simd/platform.h \
@@ -146,6 +147,7 @@ src/Renderer/VertexArray.h:
 Dependencies/GLEW/include/GL/glew.h:
 src/Renderer/VertexBuffer.h:
 src/Renderer/IndexBuffer.h:
+src/Renderer/BufferLayout.h:
 src/Renderer/../Batch/Type.h:
 Dependencies/GLM/include/glm/glm.hpp:
 Dependencies/GLM/include/glm/detail/_fixes.hpp:

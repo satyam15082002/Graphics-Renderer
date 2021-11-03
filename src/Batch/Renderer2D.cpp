@@ -1,5 +1,6 @@
 #include"Renderer2D.h"
 #include"../Renderer/Renderer.h"
+#include"../Renderer/BufferLayout.h"
 Ref<VertexArray> Renderer2D::m_VA;
 Ref<Shader> Renderer2D::m_Shader;
 Ref<Camera> Renderer2D::m_Camera;
@@ -15,17 +16,21 @@ void Renderer2D::Init(Ref<Camera>& cam)
     m_VA=std::make_shared<VertexArray>();
     m_VA->m_VB=std::make_shared<VertexBuffer>(sizeof(Vertex)*m_MaxVertex);
     m_VA->m_IB=std::make_shared<IndexBuffer>(m_MaxIndices);
-    glEnableVertexAttribArray(0);
-    glVertexAttribPointer(0, 4, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex,m_Position)); 
-
-    glEnableVertexAttribArray(1);
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex,m_Color)); 
-
-    glEnableVertexAttribArray(2);
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex,m_TextCoords)); 
-
-    glEnableVertexAttribArray(3);
-    glVertexAttribPointer(3, 1, GL_FLOAT, GL_FALSE, sizeof(Vertex), (void*)offsetof(Vertex,m_TextId)); 
+    std::initializer_list<BufferElement> layoutList={
+       BufferElement ({ShaderDataType::Float4,"vertex"}),
+        BufferElement({ShaderDataType::Float4,"color"}),
+        BufferElement({ShaderDataType::Float2,"textcoords"}),
+        BufferElement({ShaderDataType::Float,"textid"})
+    };
+    m_VA->m_VL=std::make_shared<BufferLayout>(layoutList);
+    unsigned int loc=0;
+    for(auto i:m_VA->m_VL->GetElements())
+    {
+        glEnableVertexAttribArray(loc);
+        glVertexAttribPointer(loc, i.GetComponentCount(),ShaderDataTypeToOpenGLBaseType(i.Type),
+        i.Normalized?GL_TRUE: GL_FALSE,m_VA->m_VL->GetStride(), (void*)i.Offset); 
+        loc++;
+    }
 
     m_Shader=make_shared<Shader>("assets/shader/std.vs","assets/shader/std.fs");
     m_Shader->Bind();

@@ -4,6 +4,7 @@ bin/obj/x64/Debug/Scene.o: src/Scene/Scene.cpp src/Scene/Scene.h \
  Dependencies/GLEW/include/GL/glew.h \
  src/Scene/../Batch/../Renderer/VertexBuffer.h \
  src/Scene/../Batch/../Renderer/IndexBuffer.h \
+ src/Scene/../Batch/../Renderer/BufferLayout.h \
  e:\program\graphics-renderer\src\batch\type.h \
  Dependencies/GLM/include/glm/glm.hpp \
  Dependencies/GLM/include/glm/detail/_fixes.hpp \
@@ -209,6 +210,7 @@ src/Scene/../Batch/../Renderer/VertexArray.h:
 Dependencies/GLEW/include/GL/glew.h:
 src/Scene/../Batch/../Renderer/VertexBuffer.h:
 src/Scene/../Batch/../Renderer/IndexBuffer.h:
+src/Scene/../Batch/../Renderer/BufferLayout.h:
 e:\program\graphics-renderer\src\batch\type.h:
 Dependencies/GLM/include/glm/glm.hpp:
 Dependencies/GLM/include/glm/detail/_fixes.hpp:

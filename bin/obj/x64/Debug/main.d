@@ -197,11 +197,11 @@ bin/obj/x64/Debug/main.o: main.cpp std_pch.h \
  Dependencies/GLM/include/glm/gtc/../gtc/../ext/vector_uint1_sized.hpp \
  Dependencies/GLM/include/glm/gtc/type_ptr.inl \
  src/Renderer/VertexBuffer.h src/Renderer/VertexArray.h \
- src/Renderer/IndexBuffer.h src/Renderer/../Batch/Type.h \
- src/Renderer/Renderer.h src/Renderer/Texture.h \
- Dependencies/STB_IMAGE/stb_image/stb_image.h src/Renderer/Camera.h \
- src/Batch/Renderer2D.h src/Input/Input.h src/Input/KeyCode.h \
- src/Input/MouseCode.h src/Scene/Scene.h \
+ src/Renderer/IndexBuffer.h src/Renderer/BufferLayout.h \
+ src/Renderer/../Batch/Type.h src/Renderer/Renderer.h \
+ src/Renderer/Texture.h Dependencies/STB_IMAGE/stb_image/stb_image.h \
+ src/Renderer/Camera.h src/Batch/Renderer2D.h src/Input/Input.h \
+ src/Input/KeyCode.h src/Input/MouseCode.h src/Scene/Scene.h \
  Dependencies/Entt/Entity/entt.hpp src/Scene/Entity.h \
  src/Scene/Components.h src/Scene/Panel.h \
  Dependencies/IconFontCppHeaders-main/IconsFontAwesome5.h
@@ -411,6 +411,7 @@ Dependencies/GLM/include/glm/gtc/type_ptr.inl:
 src/Renderer/VertexBuffer.h:
 src/Renderer/VertexArray.h:
 src/Renderer/IndexBuffer.h:
+src/Renderer/BufferLayout.h:
 src/Renderer/../Batch/Type.h:
 src/Renderer/Renderer.h:
 src/Renderer/Texture.h:

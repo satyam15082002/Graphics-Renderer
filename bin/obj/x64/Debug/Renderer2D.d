@@ -1,7 +1,7 @@
 bin/obj/x64/Debug/Renderer2D.o: src/Batch/Renderer2D.cpp \
  src/Batch/Renderer2D.h src/Batch/../Renderer/VertexArray.h \
  Dependencies/GLEW/include/GL/glew.h src/Batch/../Renderer/VertexBuffer.h \
- src/Batch/../Renderer/IndexBuffer.h \
+ src/Batch/../Renderer/IndexBuffer.h src/Batch/../Renderer/BufferLayout.h \
  src/Batch/../Renderer/../Batch/Type.h \
  Dependencies/GLM/include/glm/glm.hpp \
  Dependencies/GLM/include/glm/detail/_fixes.hpp \
@@ -204,6 +204,7 @@ src/Batch/../Renderer/VertexArray.h:
 Dependencies/GLEW/include/GL/glew.h:
 src/Batch/../Renderer/VertexBuffer.h:
 src/Batch/../Renderer/IndexBuffer.h:
+src/Batch/../Renderer/BufferLayout.h:
 src/Batch/../Renderer/../Batch/Type.h:
 Dependencies/GLM/include/glm/glm.hpp:
 Dependencies/GLM/include/glm/detail/_fixes.hpp:

@@ -31,4 +31,8 @@ void VertexArray::AddIndexBuffer(Ref<IndexBuffer>& IB)
 {
     m_IB=IB;
 }
+void VertexArray::AddBufferLayout(Ref<BufferLayout>& VL)
+{
+    m_VL=VL;
+}
 
